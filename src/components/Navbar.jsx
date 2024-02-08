@@ -45,10 +45,10 @@ function SmallDeviceLinks({ toggleMenu, setToggleMenu }) {
         <ul
           className={
             !toggleMenu &&
-            "w-full  h-[100dvh] animate-toggle bg-blackColor flex items-center justify-center flex-col gap-8 absolute top-0 left-0"
+            "w-full  h-[100dvh] animate-toggle  bg-blackColor flex items-center justify-center flex-col gap-8 fixed inset-0 z-[10000]"
           }
         >
-          <LinksHref />
+          <LinksHref SetToggleMenu={setToggleMenu} />
           <MdOutlineRestaurantMenu
             className='absolute top-8 right-8 cursor-pointer'
             onClick={() => setToggleMenu(true)}
@@ -59,29 +59,33 @@ function SmallDeviceLinks({ toggleMenu, setToggleMenu }) {
   )
 }
 
-function LinksHref({ setToggleMenu }) {
+function LinksHref({ SetToggleMenu }) {
   return (
     <>
-      <li
-        className='text-greyColor hover:text-goldenColor transition-all duration-300'
-        onClick={() => setToggleMenu(true)}
-      >
-        <a href='#home'>Home</a>
+      <li className='text-greyColor hover:text-goldenColor transition-all duration-300'>
+        <a href='#home' onClick={() => SetToggleMenu(true)}>
+          Home
+        </a>
       </li>
-      <li
-        className='text-greyColor hover:text-goldenColor transition-all duration-300'
-        onClick={() => setToggleMenu(false)}
-      >
-        <a href='#about'>About</a>
+      <li className='text-greyColor hover:text-goldenColor transition-all duration-300'>
+        <a href='#about' onClick={() => SetToggleMenu(true)}>
+          About
+        </a>
       </li>
       <li className='text-greyColor hover:text-goldenColor transition-all duration-300 '>
-        <a href='#menu'>Menu</a>
+        <a href='#menu' onClick={() => SetToggleMenu(true)}>
+          Menu
+        </a>
       </li>
       <li className='text-greyColor hover:text-goldenColor transition-all duration-300 '>
-        <a href='#award'>Awards</a>
+        <a href='#award' onClick={() => SetToggleMenu(true)}>
+          Awards
+        </a>
       </li>
       <li className='text-greyColor  hover:text-goldenColor transition-all duration-300 '>
-        <a href='#contact'>Contact</a>
+        <a href='#contact' onClick={() => SetToggleMenu(true)}>
+          Contact
+        </a>
       </li>
     </>
   )
