@@ -5,7 +5,7 @@ import knife from "../assets/knife.png"
 
 const About = () => {
   return (
-    <section className='bg-blackColor py-24 container mx-auto' id='about'>
+    <section className='bg-blackColor py-24  sm:px-16 px-8' id='about'>
       <Backgrounds />
     </section>
   )
@@ -41,8 +41,8 @@ function AboutInfo() {
         <img src={spoon} alt='spoon' className='w-8 object-cover' />
         <p className='md:text-end'>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis pharetra
-          adipiscing ultrices vulputate posuere tristique. In sed odio nec
-          aliquet eu proin mauris et.
+          adipiscing ultrices vulputate posuere <br /> tristique. In sed odio
+          nec aliquet eu proin mauris et.
         </p>
         <button className='py-2 px-3 rounded-md font-medium bg-goldenColor text-blackColor w-44 mt-4 shadow-xl hover:shadow-goldenColor/30 hover:scale-95 transition-all duration-300'>
           Expolore More
@@ -56,8 +56,8 @@ function AboutInfo() {
         <img src={spoon} alt='spoon' className='w-8 object-cover' />
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis pharetra
-          adipiscing ultrices vulputate posuere tristique. In sed odio nec
-          aliquet eu proin mauris et.
+          adipiscing ultrices vulputate posuere <br /> tristique. In sed odio
+          nec aliquet eu proin mauris et.
         </p>
         <button className='py-2 px-3 rounded-md font-medium bg-goldenColor text-blackColor w-44 mt-4 shadow-xl hover:shadow-goldenColor/30 hover:scale-95 transition-all duration-300'>
           Expolore More

@@ -4,7 +4,7 @@ import headerImage from "../assets/welcome.png"
 const Header = () => {
   return (
     <header
-      className='grid md:grid-cols-2 gap-12 items-center container mx-auto bg-blackColor  pt-12 pb-24 px-8 md:px-16'
+      className='grid md:grid-cols-2 gap-12 items-center  bg-blackColor  pt-12 pb-24 px-8 md:px-16'
       id='home'
     >
       <HeaderInfo />
@@ -40,7 +40,7 @@ function HeaderInfo() {
 function HeaderImage() {
   return (
     <div>
-      <img src={headerImage} alt='welcome' className='w-full h-full' />
+      <img src={headerImage} alt='welcome' className=' lg:h-[40rem] mx-auto' />
     </div>
   )
 }

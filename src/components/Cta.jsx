@@ -4,7 +4,7 @@ import findus from "../assets/findus.png"
 const Cta = () => {
   return (
     <section
-      className='py-24 px-8 container mx-auto bg-blackColor sm:px-16 grid gap-8 md:grid-cols-2 items-center'
+      className='py-24 px-8  bg-blackColor sm:px-16 grid gap-8 md:grid-cols-2 items-center'
       id='contact'
     >
       <CtaInf />

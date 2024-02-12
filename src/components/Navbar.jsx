@@ -6,7 +6,7 @@ import { MdOutlineRestaurantMenu } from "react-icons/md"
 function Navbar() {
   const [toggleMenu, setToggleMenu] = useState(true)
   return (
-    <nav className='flex items-center justify-between  w-full max-w-[105rem] mx-auto  py-[32px] px-8 md:px-16'>
+    <nav className='flex items-center justify-between  w-full   py-[32px] px-8 md:px-16'>
       <Logo />
       <Links setToggleMenu={setToggleMenu} />
       <Buttons />

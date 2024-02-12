@@ -5,7 +5,7 @@ import sign from "../assets/sign.png"
 
 const ChefsWord = () => {
   return (
-    <section className='py-24 px-8 container mx-auto sm:px-16 grid gap-8 md:grid-cols-2 items-center '>
+    <section className='py-24 px-8  sm:px-16 grid gap-8 md:grid-cols-2 items-center '>
       <ChefImage />
       <ChefInfo />
     </section>

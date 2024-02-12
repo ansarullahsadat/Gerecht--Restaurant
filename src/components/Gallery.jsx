@@ -30,7 +30,7 @@ function Gallery() {
     },
   }
   return (
-    <section className='grid   container  md:grid-cols-2 lg:grid-cols-3 items-center bg-blackColor py-24 px-8 md:px-16 md:mx-auto gap-8'>
+    <section className='grid     md:grid-cols-2 lg:grid-cols-3 items-center bg-blackColor py-24 px-8 md:px-16 gap-8'>
       <GalleryInfo />
       <GalleryImg Responsive={responsive} />
     </section>

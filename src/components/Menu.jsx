@@ -3,7 +3,7 @@ import menu from "../assets/menu.png"
 
 const Menu = () => {
   return (
-    <section className='py-24 px-8 sm:px-16 container mx-auto' id='menu'>
+    <section className='py-24 px-8 sm:px-16  ' id='menu'>
       <MenuTitle />
       <MenuContainer />
     </section>
